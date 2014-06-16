@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- imports -->
+		<link rel="stylesheet" href="includes/css/html5reset-1.6.1.css">
+		<script type="text/javascript" src="includes/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+		<script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="includes/js/crossDomain/jquery.xdomainajax.js"></script><!-- cross domain for astrology-->
+		<script type="text/javascript" src="includes/js/crossDomain/xml2json.js"></script><!-- cross domain for astrology-->
+		<!-- -->
+		<script type="text/javascript"  src="includes/js/pie/jquery.flot.js"></script>
+		<script type="text/javascript"  src="includes/js/pie/jquery.flot.pie.js"></script>
+		<script type="text/javascript"  src="includes/js/popup/apprise-v2.js"></script>
+		<link rel="stylesheet" href="includes/js/popup/apprise-v2.css">
+		<!-- page js & css -->
+		<script src="includes/js/locationANDastrology.js"></script>
+		<script src="includes/js/database.js"></script>
+		<script src="includes/js/offMenu.js"></script>
+		<link rel="stylesheet" href="includes/css/index.css">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div data-role="page" id="page_welcome"> </div>
+			<div data-role="page" id="page_home">
+				<div data-role="content">
+					<article id="welcome_text"> </article>
+					<form action="#" id="details_form">
+							<p><label for="full_name">
+								<span> </span><input id="full_name" type="text" name="full_name" placeholder="First / Last Name">
+							</label></p>
+							<p><label for="email">
+								<span> </span><input id="email" type="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]+">
+							</label></p>
+							<p><label for="date">
+								<span> </span><input id="date" placeholder="Date Of Birth" type="text" required>
+							</label></p>
+						<p><input id="submit" type="submit" name="submit" value="LOGIN" /></p>
+					</form>
+				</div>
+			</div>
+
+			<div data-role="page"  id="page_astrology">
+				<div data-role="content">
+					<header>
+					<article class="astrology_title">ASTROLOGY</article>
+					</header>
+					<article id="astrology"> </article>
+					<section id="question_part">
+						<p id="question">Find us whether it is true?</p>
+						<a href="#" class="trueButton" data-role="button" data-rel="popup" data-inline="true">Good Job</a>
+						<a href="#" class="falseButton" data-role="button" data-rel="popup" data-inline="true">Big Mistake</a>
+					</section>
+				</div>
+			</div>
+			
+			<div data-role="page"  id="page_statistics">
+				<div data-role="content">
+					<div id="site-wrapper">
+						<section id="site-canvas">
+							<header>
+							<article class="statistics_title">
+								<a href="#" id="falseIcon" class="toggle-nav-left"> </a>STATISTICS<a href="#" id="trueIcon" class="toggle-nav-right"> </a>
+							</article>
+							</header>
+							<article id="country_name"> </article>
+							<div id="placeholder"> </div>
+
+							<!--Left Aside Off Menu-->
+							<section href="#" id="site-menu-left">
+								<header> </header>
+								<section> </section>
+							</section>
+
+							<!--Right Aside Off Menu-->
+							<section href="#" id="site-menu-right">
+								<header> </header>
+								<section> </section>
+							</section>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+	</body>
+</html>
