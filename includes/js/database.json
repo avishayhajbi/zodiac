@@ -37,7 +37,7 @@
 			"email": "david@gueta",
 			"date": [1978, 11, 5],
 			"time": 13,
-			"like": false,
+			"like": true,
 			"country": "USA",
 			"comment": "abcd"
 		}, {
