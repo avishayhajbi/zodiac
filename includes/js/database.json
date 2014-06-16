@@ -46,7 +46,7 @@
 			"date": [1978, 11, 5],
 			"time": 2,
 			"like": false,
-			"country": "Italy",
+			"country": "Israel",
 			"comment": "abcd"
 		}, {
 			"name": "david gueta",
@@ -54,7 +54,7 @@
 			"date": [1978, 11, 5],
 			"time": 3,
 			"like": false,
-			"country": "Irish",
+			"country": "Israel",
 			"comment": "abcd"
 		}
 	],

@@ -95,14 +95,14 @@ $(document).ready(function() {
 
 function drawPie() {
 	var labelFormatter = function labelFormatter(label, series) {
-		return "<div style='font-size:10pt; text-align:center; padding:2%;color:white; text-shdow: 0 0 black;'>" + label + "<br/>" + series.data[0][1] + "</div>";
+		return "<div class='pieTextState' style='text-align:center; padding:2%;color:white; text-shdow: 0 0 black;'>" +series.data[0][1] + "<br/>" + label +   "<br/> <span class='pieTextAstrology'>Astrology</span></div>";
 	};
 	var data = [{
-		label : "TRUE",
+		label : "CORRECT",
 		data : statisticsLike[0],
 		color : "#fd0160"
 	}, {
-		label : "FALSE",
+		label : "MISTAKE",
 		data : statisticsLike[1],
 		color : "#2c2048"
 	}];
@@ -128,7 +128,7 @@ function drawPie() {
 			show : false
 		},
 		grid : {
-			//hoverable : true,
+			hoverable : true,
 			clickable : true
 		},
 		label : {
@@ -136,8 +136,45 @@ function drawPie() {
 		}
 	});
 $("#placeholder").bind("plotclick", function(event, pos, item) {
+	$( ".toggle-nav-left" ).on( "click", function() {
+	   toggleNav_Left();
+	}),
+	$( ".toggle-nav-right" ).on( "click", function() {
+	  toggleNav_right();
+	});
 	if (item) {
-		alert(item.series.label);
+		if(item.series.label.indexOf("CORRECT") > -1){
+			$( ".toggle-nav-right" ).trigger( "click" );
+		}
+		else if (item.series.label.indexOf("MISTAKE") > -1){
+			$( ".toggle-nav-left" ).trigger( "click" );
+		}
 	}
 });
+}
+// remove selected mark from pie
+$("#placeholder").bind("mouseleave", function(event, pos, item) {
+    var e = jQuery.Event('mousemove');
+    e.pageX = 1;
+    e.pageY = 1;
+    $('#placeholder canvas:first').trigger(e);
+    console.log('unhighlighting');
+});
+
+function loadTrueFalseComments(){
+	var trueArr=[];
+	var falseArr=[];
+	for (i in database){
+		if (database[i].country == userCountry){
+			if (database[i].like == true){
+				trueArr.push(database[i]);
+			}
+			if (database[i].like ==false){
+				falseArr.push(database[i]);
+			}
+		}
+	}
+	//console.table(trueArr);
+	//console.table(falseArr);
+	
 }

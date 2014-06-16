@@ -211,19 +211,22 @@ function getZodiac(day, month) {
 	} else if ((month == 11 && day >= 23) || (month == 12 && day <= 21)) {return zodiacSigns[0].sagittarius;}
 }
 /* *********************** */
-$(document).ready(function(){
-	screenwidth();
-});
 function screenwidth(){
 	var screenWidth = $(document).width()-50;
 	var percentage = ( screenWidth * 100 ) / $(document).width() ; // 0.92%
 	return percentage;
 }
 $(function() {
-    $('.toggle-nav-left').click(function() {
+	screenwidth();
+	$('.toggle-nav-left').click(function() {
         // Calling a function in case you want to expand upon this.
         toggleNav_Left();
+    }),
+    $('.toggle-nav-right').click(function() {
+        // Calling a function in case you want to expand upon this.
+        toggleNav_right();
     });
+   
 });
 function toggleNav_Left() {
     if ($('#site-wrapper').hasClass('show-nav-left')) {
@@ -239,12 +242,6 @@ function toggleNav_Left() {
         $('#site-wrapper.show-nav-left #site-canvas').css({"transform":"translateX("+screenwidth()+"%)"});
     }
 }
-$(function() {
-    $('.toggle-nav-right').click(function() {
-        // Calling a function in case you want to expand upon this.
-        toggleNav_right();
-    });
-});
 function toggleNav_right() {
     if ($('#site-wrapper').hasClass('show-nav-right')) {
     	$("section#site-canvas").css('border-right',"none");
