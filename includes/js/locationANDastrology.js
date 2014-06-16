@@ -108,9 +108,9 @@ function init(){
 			className: 'greyL',
 			action: function(e) {
 			   	comment="No Comment";
-				$.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
-				addToDb(button);
 				Apprise('close');
+				
+				
 			}
 		},
 		confirm: {
@@ -120,8 +120,6 @@ function init(){
 				comment=e.input;
 				if (comment == null)
 	    	 		comment="No Comment";
-			    $.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
-				addToDb(button);
 				Apprise('close');
 			}
 		},
@@ -129,7 +127,9 @@ function init(){
 	input: true,
 };
 Apprise('Insert your comment', options);
-	     
+addToDb(button);
+ $.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
+ 
 	}),
 	$('#details_form #date').bind('click',function(){
 		initDatePicker();
