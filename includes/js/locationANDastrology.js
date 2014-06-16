@@ -175,7 +175,7 @@ function validate_form() {
 		userName = $('#full_name').val();
 		userEmail = $('#email').val();
 		xmlLoader(); 
-		$.mobile.changePage( "#page_astrology", { transition: "flip", changeHash: true , revers:true});
+		//$.mobile.changePage( "#page_astrology", { transition: "flip", changeHash: true , revers:true});
 	}
 }
 
