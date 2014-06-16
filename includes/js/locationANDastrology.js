@@ -91,7 +91,6 @@ function init(){
 	    comment="No Comment";
 		addToDb(trueORfalseButton);
 		$.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
- 
 	}),
 	$('#details_form #date').bind('click',function(){
 		initDatePicker();
@@ -105,9 +104,6 @@ function init(){
 			zodiacSigns.push(data.zodiacSigns[i]);
 		}
 	});
-}
-function saveComment(){
-	
 }
 function initDatePicker() {
 	$('#details_form #date').css("border","none");

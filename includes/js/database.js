@@ -1,6 +1,7 @@
 var welcomeText = "WELCOME <p class='context'> Astrology Community, is a new way to test statistically whether your daily astrology forecast matches other people with the same birth data as yours. Let's find out weather or not the forecast matching.<p>";
 var database = [];
 var statisticsLike = [];
+var ifPieDraw=false;
 function User(fullName, email, date, time, like, country, comment) {
 	var user = {
 		name : fullName,
@@ -66,6 +67,16 @@ function getStatistics() {
 	$('#country_name').css("width", getTextPixel() + 30 + "px");
 	drawPie();
 	console.log("------Like---" + (statisticsLike[0]) + " ---Unlike--" + statisticsLike[1]);
+	
+// var plot = $.plot($('#placeholder'),data,options);
+// plot.setData([{label : "TRUE",data : statisticsLike[0],color : "#fd0160"}, {label : "FALSE",data : statisticsLike[1],color : "#2c2048"}]);
+// plot.setupGrid(); 
+// plot.draw();
+if(!ifPieDraw)
+	setTimeout(function(){
+		drawPie();
+		ifPieDraw=true;
+	},500);
 }
 
 function getTextPixel() {
@@ -92,7 +103,6 @@ $(document).ready(function() {
 });
 
 function drawPie() {
-	
 	var labelFormatter = function labelFormatter(label, series) {
 		return "<div style='font-size:10pt; text-align:center; padding:2%;color:white; text-shdow: 0 0 black;'>" + label + "<br/>" + series.data[0][1] + "</div>";
 	};
