@@ -86,7 +86,7 @@ function init(){
 		trueORfalseButton = this;
 		$("#dialogTextarea").val("");
 		$("#dialogTextarea").focus();
-		window.setTimeout(function(){
+		setTimeout(function(){
 		$('#dialogTextarea').trigger('click');
 		},2000);
 	}),
