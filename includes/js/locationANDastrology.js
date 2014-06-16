@@ -9,6 +9,7 @@ var comment;
 var latitude;
 var longitude;
 var userCountry;
+var trueORfalseButton;
 var zodiacSigns=[];
 $(document).ready(function() {
 		getLocation(); //html5 location
@@ -80,12 +81,15 @@ function init(){
 	  event.preventDefault();
 	  validate_form();
 	}),
+	$('#page_astrology a').bind('click',function(){
+		trueORfalseButton = this;
+		$("#dialogTextarea").val("");
+	}),
 	$('#dialog button').bind('click',function(){
-		var button = this;
 		comment = $("#dialogTextarea").val();
 		if(!comment)
 	    comment="No Comment";
-		addToDb(button);
+		addToDb(trueORfalseButton);
 		$.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
  
 	}),

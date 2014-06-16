@@ -321,7 +321,7 @@ body {
 	transform:translateX(-95%);
 }
 #dialog{
-	height:200px;	
+	height:100%;	
 }
 .dialogB.ui-btn.ui-btn-inline {
 	width: 100px ;
