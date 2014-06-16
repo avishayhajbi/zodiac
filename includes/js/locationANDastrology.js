@@ -109,7 +109,8 @@ function init(){
 			action: function(e) {
 			   	comment="No Comment";
 				Apprise('close');
-				
+				addToDb(button);
+ $.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
 				
 			}
 		},
@@ -121,14 +122,14 @@ function init(){
 				if (comment == null)
 	    	 		comment="No Comment";
 				Apprise('close');
+				addToDb(button);
+ $.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
 			}
 		},
 	},
 	input: true,
 };
 Apprise('Insert your comment', options);
-addToDb(button);
- $.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
  
 	}),
 	$('#details_form #date').bind('click',function(){
