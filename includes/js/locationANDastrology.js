@@ -87,8 +87,9 @@ function init(){
 		$("#dialogTextarea").val("");
 		$("#dialogTextarea").focus();
 		setTimeout(function(){
+			$('#dialogTextarea').trigger('click');
 			$('#dialogTextarea').trigger('tap');
-			console.log('trigger');
+			$('#dialogTextarea').trigger('touch');
 		},1000);
 	}),
 	$('#dialog button').bind('click',function(){
