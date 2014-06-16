@@ -86,6 +86,9 @@ function init(){
 		trueORfalseButton = this;
 		$("#dialogTextarea").val("");
 		$("#dialogTextarea").focus();
+		window.setTimeout(function(){
+		$('#dialogTextarea').trigger('click');
+		},2000);
 	}),
 	$('#dialog button').bind('click',function(){
 		comment = $("#dialogTextarea").val();
