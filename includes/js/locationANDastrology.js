@@ -108,9 +108,10 @@ function init(){
 			className: 'greyL',
 			action: function(e) {
 			   	comment="No Comment";
+			   	addToDb(button);
+ 				$.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
 				Apprise('close');
-				addToDb(button);
- $.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
+
 				
 			}
 		},
@@ -121,9 +122,10 @@ function init(){
 				comment=e.input;
 				if (comment == null)
 	    	 		comment="No Comment";
+					addToDb(button);
+					$.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
 				Apprise('close');
-				addToDb(button);
- $.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
+
 			}
 		},
 	},
