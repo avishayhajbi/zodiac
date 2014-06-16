@@ -320,3 +320,16 @@ body {
 	-webkit-transform:translateX(-95%);
 	transform:translateX(-95%);
 }
+#dialog{
+	height:200px;	
+}
+.dialogB.ui-btn.ui-btn-inline {
+	width: 100px ;
+	margin-top:7px;
+}
+#dialogCancel{
+	float: left;
+}
+#dialogSave{
+	float: right;
+}

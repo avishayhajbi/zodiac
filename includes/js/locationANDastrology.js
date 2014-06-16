@@ -80,58 +80,13 @@ function init(){
 	  event.preventDefault();
 	  validate_form();
 	}),
-	$('#page_astrology a').bind('click',function(){
+	$('#dialog button').bind('click',function(){
 		var button = this;
-		var settings = {
-		animation: 700,	// Animation speed
-		buttons: {
-			confirm: {
-				action: function() { $me.dissapear(); }, // Callback function
-				className: null, // Custom class name(s)
-				id: 'confirm', // Element ID
-				text: 'Ok', // Button text
-			},
-			cancel: {
-				action: function() { $me.dissapear(); }, // Callback function
-				className: null, // Custom class name(s)
-				id: 'cancel', // Element ID
-				text: 'cancel', // Button text
-			}
-		},
-		input: false, // input dialog
-		override: true, // Override browser navigation while Apprise is visible
-	};
-	var options = {
-	buttons: {
-		cancel: {
-			text: 'Cancel',
-			className: 'greyL',
-			action: function(e) {
-			   	comment="No Comment";
-			   	addToDb(button);
- 				$.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
-				Apprise('close');
-
-				
-			}
-		},
-		confirm: {
-			text: 'Comment',
-			className: 'greyR',
-			action: function(e) {
-				comment=e.input;
-				if (comment == null)
-	    	 		comment="No Comment";
-					addToDb(button);
-					$.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
-				Apprise('close');
-
-			}
-		},
-	},
-	input: true,
-};
-Apprise('Insert your comment', options);
+		comment = $("#dialogTextarea").val();
+		if(!comment)
+	    comment="No Comment";
+		addToDb(button);
+		$.mobile.changePage( "#page_statistics", { transition: "flip", changeHash: true , revers:true});
  
 	}),
 	$('#details_form #date').bind('click',function(){
@@ -175,7 +130,6 @@ function validate_form() {
 		userName = $('#full_name').val();
 		userEmail = $('#email').val();
 		xmlLoader(); 
-		//$.mobile.changePage( "#page_astrology", { transition: "flip", changeHash: true , revers:true});
 	}
 }
 

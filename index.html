@@ -53,12 +53,21 @@
 					<article id="astrology"> </article>
 					<section id="question_part">
 						<p id="question">Find us whether it is true?</p>
-						<a href="#" class="trueButton" data-role="button" data-rel="popup" data-inline="true">Good Job</a>
-						<a href="#" class="falseButton" data-role="button" data-rel="popup" data-inline="true">Big Mistake</a>
+						<a href="#dialog" data-rel="dialog" class="trueButton" data-role="button"  data-ajax="false" data-inline="true">Good Job</a>
+						<a href="#dialog" data-rel="dialog" class="falseButton" data-role="button" data-ajax="false" data-inline="true">Big Mistake</a>
 					</section>
 				</div>
 			</div>
 			
+			<div data-role="page" data-dialog="true" id="dialog">
+			  <div data-role="content" class="ui-content">
+			  	<header><article>Insert your comment</article></header>
+			  	<textarea id="dialogTextarea" cols="150" rows="50"> </textarea>
+			     <button id="dialogCancel" class="dialogB ui-btn ui-btn-inline" >Cancel</button>
+			     <button id="dialogSave" class="dialogB ui-btn ui-btn-inline" >Save</button>
+			  </div>
+			</div>
+		  	
 			<div data-role="page"  id="page_statistics">
 				<div data-role="content">
 					<div id="site-wrapper">
