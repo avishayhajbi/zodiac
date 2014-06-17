@@ -308,6 +308,7 @@ body {
 }
 #site-canvas {
 	width:100%;
+	overflow:inherit;
 	position:relative;
 	-webkit-transform:translateX(0);
 	transform:translateX(0);
@@ -364,7 +365,6 @@ body {
 	max-width:270px;
 	height:350px;
 	padding:0;
-	margin-bottom: 50px;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 15px;
@@ -391,7 +391,6 @@ body {
 }
 .objComment p:nth-child(4), .objComment p:nth-child(5){
 	text-align:center;
-	width:auto;
 	margin:auto;
 	display:inline-block;
 	margin-right:5px;
@@ -409,7 +408,8 @@ body {
 	background-image: url('../images/commentIcon.png');
 }
 .objComment img{
-	width:270px;
+	width:auto;
+	max-width:270px;
 	height:250px;
 	padding: 0;
 }

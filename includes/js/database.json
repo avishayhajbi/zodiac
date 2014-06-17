@@ -38,9 +38,25 @@
 			"date": [1978, 11, 5],
 			"time": 13,
 			"like": true,
-			"country": "USA",
+			"country": "Canada",
 			"comment": "abcd"
 		}, {
+			"name": "david gueta",
+			"email": "david@gueta",
+			"date": [1978, 11, 5],
+			"time": 13,
+			"like": true,
+			"country": "Canada",
+			"comment": "abcd"
+		},{
+			"name": "david gueta",
+			"email": "david@gueta",
+			"date": [1978, 11, 5],
+			"time": 13,
+			"like": false,
+			"country": "Canada",
+			"comment": "abcd"
+		},{
 			"name": "moshe hai",
 			"email": "moshe@hai",
 			"date": [1978, 11, 5],
