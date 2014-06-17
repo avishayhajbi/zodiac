@@ -1,7 +1,7 @@
 var welcomeText = "WELCOME <p class='context'> Astrology Community, is a new way to test statistically whether your daily astrology forecast matches other people with the same birth data as yours. Let's find out weather or not the forecast matching.<p>";
 var database = [];
 var statisticsLike = [];
-function User(fullName, email, date, time, like, country, comment) {
+function User(fullName, email, date, time, like, country, comment,img) {
 	var user = {
 		name : fullName,
 		email : email,
@@ -9,7 +9,8 @@ function User(fullName, email, date, time, like, country, comment) {
 		time : time,
 		like : like,
 		country : country,
-		comment : comment
+		comment : comment,
+		image: img
 	};
 	return user;
 }
@@ -44,7 +45,7 @@ function addToDb(obj) {
 	}
 	var answer;
 	obj.innerHTML == "Good Job" ? answer = true : answer = false;
-	database.push(User(userName, userEmail, datePicker, new Date().getHours(), answer, userCountry, comment));
+	database.push(User(userName, userEmail, datePicker, new Date().getHours(), answer, userCountry, comment,""));
 	console.table(database);
 	getStatistics();
 }

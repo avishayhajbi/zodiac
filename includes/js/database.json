@@ -7,7 +7,8 @@
 			"time": 11,
 			"like": false,
 			"country": "Italy",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		}, {
 			"name": "ofir aghai",
 			"email": "ofir@aghai",
@@ -15,7 +16,8 @@
 			"time": 2,
 			"like": true,
 			"country": "Israel",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		}, {
 			"name": "ofir aghai",
 			"email": "mosh@hai",
@@ -23,7 +25,8 @@
 			"time": 1,
 			"like": true,
 			"country": "Israel",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -31,7 +34,8 @@
 			"time": 4,
 			"like": false,
 			"country": "Israel",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -39,7 +43,8 @@
 			"time": 13,
 			"like": true,
 			"country": "Canada",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -47,7 +52,8 @@
 			"time": 13,
 			"like": true,
 			"country": "Canada",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		},{
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -55,7 +61,8 @@
 			"time": 13,
 			"like": false,
 			"country": "Canada",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		},{
 			"name": "moshe hai",
 			"email": "moshe@hai",
@@ -63,7 +70,8 @@
 			"time": 2,
 			"like": false,
 			"country": "Israel",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -71,7 +79,8 @@
 			"time": 3,
 			"like": false,
 			"country": "Israel",
-			"comment": "abcd"
+			"comment": "abcd",
+			"image" : ""
 		}
 	],
 	"zodiacSigns": [
