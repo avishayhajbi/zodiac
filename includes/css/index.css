@@ -304,13 +304,10 @@ body {
 /* Off Canvas Menu */
 #site-wrapper {
 	position:relative;
-	overflow:hidden;
 	width:100%;
-	height:700px; /* Temp: Simulates a tall page. 680px*/
 }
 #site-canvas {
 	width:100%;
-	height:100%;
 	position:relative;
 	-webkit-transform:translateX(0);
 	transform:translateX(0);
@@ -361,4 +358,58 @@ body {
 }
 #dialogSave{
 	float: right;
+}
+.objComment{
+	width:auto;
+	max-width:270px;
+	height:350px;
+	padding:0;
+	margin-bottom: 50px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 400;	
+}
+.objComment article , .objComment p{
+	text-align: left;
+	margin-bottom: 5px;
+}
+.objComment article>span{
+	float: right;
+	padding-right: 22px;
+	background-image: url('../images/clockIcon.png');
+	background-repeat:no-repeat;
+	background-position: 22px center;
+}
+.objComment p{
+	font-weight: 300;
+	padding-left: 15px;
+	background-image: url('../images/location.png');
+	background-repeat:no-repeat;
+	background-position: 0px center;
+	opacity: 0.7;
+}
+.objComment p:nth-child(4), .objComment p:nth-child(5){
+	text-align:center;
+	width:auto;
+	margin:auto;
+	display:inline-block;
+	margin-right:5px;
+	float:left;
+	width:80px;
+	padding:5px;
+	text-shadow: 0 0 black;
+	background-color: grey;
+	background-size: 25px;
+}
+.objComment p:nth-child(4){
+	background-image: url('../images/likeIcon.png');
+}
+.objComment p:nth-child(5){
+	background-image: url('../images/commentIcon.png');
+}
+.objComment img{
+	width:270px;
+	height:250px;
+	padding: 0;
 }

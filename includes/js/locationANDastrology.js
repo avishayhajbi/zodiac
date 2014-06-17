@@ -229,6 +229,7 @@ $(function() {
    
 });
 function toggleNav_Left() {
+	loadTrueFalseComments();
     if ($('#site-wrapper').hasClass('show-nav-left')) {
     	$("section#site-canvas").css('border-left',"none");
         $('#site-wrapper.show-nav-left #site-canvas').css({"-webkit-transform":"translateX(0)"});
@@ -243,6 +244,7 @@ function toggleNav_Left() {
     }
 }
 function toggleNav_right() {
+	loadTrueFalseComments();
     if ($('#site-wrapper').hasClass('show-nav-right')) {
     	$("section#site-canvas").css('border-right',"none");
         $('#site-wrapper.show-nav-right #site-canvas').css({"-webkit-transform":"translateX(0)"});

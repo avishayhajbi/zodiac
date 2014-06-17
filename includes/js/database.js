@@ -68,6 +68,7 @@ function getStatistics() {
 	setTimeout(function(){
 		drawPie();
 	},500);
+	
 }
 
 function getTextPixel() {
@@ -162,19 +163,41 @@ $("#placeholder").bind("mouseleave", function(event, pos, item) {
 });
 
 function loadTrueFalseComments(){
-	var trueArr=[];
-	var falseArr=[];
+	$('.trueComments section').find('div').remove().end();
+	$('.falseComments section').find('div').remove().end();
+	$("#site-wrapper").css("height",$(window).height()+"px");
 	for (i in database){
 		if (database[i].country == userCountry){
 			if (database[i].like == true){
-				trueArr.push(database[i]);
+				var obj = document.createElement("div");
+				obj.className = "objComment";
+				$(".trueComments section").append(obj);
+				$(obj).append("<article>"+database[i].name +"<span>" +database[i].time+"H</span></article>");
+				$(obj).append("<p>"+database[i].country +"</p>");
+				$(obj).append("<img src='#' width='350' heigh='350'>");
+				$(obj).append('<p>Like</p>');
+				$(obj).append('<p>Comment</p>');
 			}
-			if (database[i].like ==false){
-				falseArr.push(database[i]);
+			else if (database[i].like == false){
+				var obj = document.createElement("div");
+				obj.className = "objComment";
+				$(".falseComments section").append(obj);
+				$(obj).append("<article>"+database[i].name +"<span>" +database[i].time+"H</span></article>");
+				$(obj).append("<p>"+database[i].country +"</p>");
+				$(obj).append("<img src='#'>");
+				$(obj).append('<p>Like</p>');
+				$(obj).append('<p>Comment</p>');
 			}
 		}
 	}
+	if($('#site-canvas').height() != $('#site-canvas')[0].scrollHeight){
+		$('#site-canvas').css("height",$('#site-canvas')[0].scrollHeight+"px");
+	}
+	else {
+			$('.trueComments section').find('div').remove().end();
+			$('.falseComments section').find('div').remove().end();
+			$('#site-canvas').css("height","auto");
+		}
 	//console.table(trueArr);
 	//console.table(falseArr);
-	
 }
