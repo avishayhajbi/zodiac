@@ -175,7 +175,7 @@ function loadTrueFalseComments(){
 				$(".trueComments section").append(obj);
 				$(obj).append("<article>"+database[i].name +"<span>" +database[i].time+"H</span></article>");
 				$(obj).append("<p>"+database[i].country +"</p>");
-				$(obj).append("<img src='#' width='350' heigh='350'>");
+				$(obj).append("<img src="+database[i].image+">");
 				$(obj).append('<p>Like</p>');
 				$(obj).append('<p>Comment</p>');
 			}
@@ -185,7 +185,7 @@ function loadTrueFalseComments(){
 				$(".falseComments section").append(obj);
 				$(obj).append("<article>"+database[i].name +"<span>" +database[i].time+"H</span></article>");
 				$(obj).append("<p>"+database[i].country +"</p>");
-				$(obj).append("<img src='#'>");
+				$(obj).append("<img src="+database[i].image+">");
 				$(obj).append('<p>Like</p>');
 				$(obj).append('<p>Comment</p>');
 			}

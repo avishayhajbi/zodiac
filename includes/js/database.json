@@ -17,7 +17,7 @@
 			"like": true,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "../images/usersImages/2.jpg"
 		}, {
 			"name": "ofir aghai",
 			"email": "mosh@hai",
@@ -26,7 +26,7 @@
 			"like": true,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "../images/usersImages/22.jpg"
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -35,7 +35,7 @@
 			"like": false,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "../images/usersImages/1.jpg"
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -71,7 +71,7 @@
 			"like": false,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "../images/usersImages/11.jpg"
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -80,7 +80,7 @@
 			"like": false,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "../images/usersImages/1.jpg"
 		}
 	],
 	"zodiacSigns": [
