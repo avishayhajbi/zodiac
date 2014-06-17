@@ -277,9 +277,8 @@ body {
 }
 /* pie flot */
 #placeholder {
-	width: 250px;
-	height: 250px;
-	max-width: 350px;
+	width: 220px;
+	height: 220px;
 	margin: auto;
 	text-align: center;
 }
