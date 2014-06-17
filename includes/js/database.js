@@ -45,7 +45,7 @@ function addToDb(obj) {
 	}
 	var answer;
 	obj.innerHTML == "Good Job" ? answer = true : answer = false;
-	database.push(User(userName, userEmail, datePicker, new Date().getHours(), answer, userCountry, comment,""));
+	database.push(User(userName, userEmail, datePicker, new Date().getHours(), answer, userCountry, comment,"#"));
 	console.table(database);
 	getStatistics();
 }

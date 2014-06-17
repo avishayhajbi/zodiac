@@ -234,9 +234,9 @@ function toggleNav_Left() {
     	$("section#site-canvas").css('border-left',"none");
         $('#site-wrapper.show-nav-left #site-canvas').css({"-webkit-transform":"translateX(0)"});
         $('#site-wrapper.show-nav-left #site-canvas').css({"transform":"translateX(0)"});
-        $('#site-wrapper.show-nav-right #site-canvas').css({"-ms-transform":"translateX(0)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-o-transform":"translateX(0)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-moz-transform":"translateX(0)"});
+        $('#site-wrapper.show-nav-left #site-canvas').css({"-ms-transform":"translateX(0)"});
+      	$('#site-wrapper.show-nav-left #site-canvas').css({"-o-transform":"translateX(0)"});
+      	$('#site-wrapper.show-nav-left #site-canvas').css({"-moz-transform":"translateX(0)"});
         $('#site-wrapper').removeClass('show-nav-left');
     } else {
         // Do things on Nav Open
@@ -244,9 +244,9 @@ function toggleNav_Left() {
         $("section#site-canvas").css('border-left',"1px solid black");
         $('#site-wrapper.show-nav-left #site-canvas').css({"-webkit-transform":"translateX("+screenwidth()+"%)"});
         $('#site-wrapper.show-nav-left #site-canvas').css({"transform":"translateX("+screenwidth()+"%)"});
-        $('#site-wrapper.show-nav-right #site-canvas').css({"-ms-transform":"translateX("+screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-o-transform":"translateX("+screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-moz-transform":"translateX("+screenwidth()+"%)"});
+        $('#site-wrapper.show-nav-left #site-canvas').css({"-ms-transform":"translateX("+screenwidth()+"%)"});
+      	$('#site-wrapper.show-nav-left #site-canvas').css({"-o-transform":"translateX("+screenwidth()+"%)"});
+      	$('#site-wrapper.show-nav-left #site-canvas').css({"-moz-transform":"translateX("+screenwidth()+"%)"});
     }
 }
 function toggleNav_right() {
@@ -265,8 +265,8 @@ function toggleNav_right() {
         $("section#site-canvas").css('border-right',"1px solid black");
         $('#site-wrapper.show-nav-right #site-canvas').css({"-webkit-transform":"translateX("+-screenwidth()+"%)"});
       	$('#site-wrapper.show-nav-right #site-canvas').css({"transform":"translateX("+-screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-ms-transform":"translateX("+screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-o-transform":"translateX("+screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-moz-transform":"translateX("+screenwidth()+"%)"});
+      	$('#site-wrapper.show-nav-right #site-canvas').css({"-ms-transform":"translateX("+-screenwidth()+"%)"});
+      	$('#site-wrapper.show-nav-right #site-canvas').css({"-o-transform":"translateX("+-screenwidth()+"%)"});
+      	$('#site-wrapper.show-nav-right #site-canvas').css({"-moz-transform":"translateX("+-screenwidth()+"%)"});
     }
 }

@@ -8,7 +8,7 @@
 			"like": false,
 			"country": "Italy",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "#"
 		}, {
 			"name": "ofir aghai",
 			"email": "ofir@aghai",
@@ -17,7 +17,7 @@
 			"like": true,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : "../images/usersImages/2.jpg"
+			"image" : "includes/images/usersImages/2.jpg"
 		}, {
 			"name": "ofir aghai",
 			"email": "mosh@hai",
@@ -26,16 +26,16 @@
 			"like": true,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : "../images/usersImages/22.jpg"
+			"image" : "includes/images/usersImages/22.jpg"
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
 			"date": [1990, 29, 7],
 			"time": 4,
-			"like": false,
+			"like": true,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : "../images/usersImages/1.jpg"
+			"image" : "includes/images/usersImages/222.jpg"
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -44,7 +44,7 @@
 			"like": true,
 			"country": "Canada",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "#"
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -53,7 +53,7 @@
 			"like": true,
 			"country": "Canada",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "#"
 		},{
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -62,7 +62,7 @@
 			"like": false,
 			"country": "Canada",
 			"comment": "abcd",
-			"image" : ""
+			"image" : "#"
 		},{
 			"name": "moshe hai",
 			"email": "moshe@hai",
@@ -71,7 +71,7 @@
 			"like": false,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : "../images/usersImages/11.jpg"
+			"image" : "includes/images/usersImages/11.jpg"
 		}, {
 			"name": "david gueta",
 			"email": "david@gueta",
@@ -80,7 +80,16 @@
 			"like": false,
 			"country": "Israel",
 			"comment": "abcd",
-			"image" : "../images/usersImages/1.jpg"
+			"image" : "includes/images/usersImages/1.jpg"
+		},{
+			"name": "david gueta",
+			"email": "david@gueta",
+			"date": [1978, 11, 5],
+			"time": 3,
+			"like": false,
+			"country": "Israel",
+			"comment": "abcd",
+			"image" : "includes/images/usersImages/11.jpg"
 		}
 	],
 	"zodiacSigns": [
