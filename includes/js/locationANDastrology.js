@@ -242,7 +242,7 @@ function toggleNav_Left() {
     } else {
         // Do things on Nav Open
         $('#site-wrapper').addClass('show-nav-left');
-        $("section#site-canvas").css('border-left',"1px solid black");
+        //$("section#site-canvas").css('border-left',"1px solid black");
         $('#site-wrapper.show-nav-left #site-canvas').css({"-webkit-transform":"translateX("+screenwidth()+"%)"});
         $('#site-wrapper.show-nav-left #site-canvas').css({"transform":"translateX("+screenwidth()+"%)"});
         $('#site-wrapper.show-nav-left #site-canvas').css({"-ms-transform":"translateX("+screenwidth()+"%)"});
@@ -263,7 +263,7 @@ function toggleNav_right() {
     } else {
         // Do things on Nav Open
         $('#site-wrapper').addClass('show-nav-right');
-        $("section#site-canvas").css('border-right',"1px solid black");
+        //$("section#site-canvas").css('border-right',"1px solid black");
         $('#site-wrapper.show-nav-right #site-canvas').css({"-webkit-transform":"translateX("+-screenwidth()+"%)"});
       	$('#site-wrapper.show-nav-right #site-canvas').css({"transform":"translateX("+-screenwidth()+"%)"});
       	$('#site-wrapper.show-nav-right #site-canvas').css({"-ms-transform":"translateX("+-screenwidth()+"%)"});
