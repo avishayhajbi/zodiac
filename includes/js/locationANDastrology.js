@@ -213,8 +213,9 @@ function getZodiac(day, month) {
 /* *********************** */
 function screenwidth(){
 	var screenWidth = $(document).width()-50;
-	var percentage = ( screenWidth * 100 ) / $(document).width() ; // 0.92%
-	return percentage;
+	if (screenWidth <= 480) return 85;
+	if (screenWidth > 480 && screenWidth < 768) return 90;
+	return 95;
 }
 $(function() {
 	screenwidth();
