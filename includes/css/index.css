@@ -304,8 +304,10 @@ body {
 #site-wrapper {
 	position:relative;
 	width:100%;
+	margin:auto;
 }
 #site-canvas {
+	margin:auto;
 	width:100%;
 	overflow:inherit;
 	position:relative;
@@ -321,6 +323,8 @@ body {
 	top:0;
 	left:-95.5%;
 	background:white;
+	margin:0;
+	padding:0;
 }
 #site-menu-right {
 	width:95%;
@@ -329,6 +333,8 @@ body {
 	top:0;
 	right:-95.5%;
 	background:white;
+	margin:0;
+	padding:0;
 }
 #site-wrapper.show-nav-left #site-canvas {
 	-webkit-transform:translateX(95%);
@@ -361,6 +367,8 @@ body {
 }
 .objComment{
 	width:auto;
+	margin:auto;
+	padding: 0;
 	max-width:270px;
 	height:350px;
 	padding:0;
@@ -408,7 +416,9 @@ body {
 }
 .objComment img{
 	width:auto;
+	margin:auto;
+	padding: 0;
 	max-width:270px;
 	height:250px;
-	padding: 0;
+	
 }
