@@ -315,7 +315,7 @@ body {
 	transition:.3s ease all;
 }
 #site-menu-left {
-	width:auto;
+	width:95%;
 	height:100%;
 	position:absolute;
 	top:0;
@@ -323,7 +323,7 @@ body {
 	background:white;
 }
 #site-menu-right {
-	width:auto;
+	width:95%;
 	height:100%;
 	position:absolute;
 	top:0;
