@@ -242,11 +242,11 @@ function toggleNav_Left() {
         // Do things on Nav Open
         $('#site-wrapper').addClass('show-nav-left');
         $("section#site-canvas").css('border-left',"1px solid black");
-        $('#site-wrapper.show-nav-left #site-canvas').css({"-webkit-transform":"translateX("+screenwidth()+"%)"});
-        $('#site-wrapper.show-nav-left #site-canvas').css({"transform":"translateX("+screenwidth()+"%)"});
-        $('#site-wrapper.show-nav-left #site-canvas').css({"-ms-transform":"translateX("+screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-left #site-canvas').css({"-o-transform":"translateX("+screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-left #site-canvas').css({"-moz-transform":"translateX("+screenwidth()+"%)"});
+        $('#site-wrapper.show-nav-left #site-canvas').css({"-webkit-transform":"translateX("+95+"%)"});
+        $('#site-wrapper.show-nav-left #site-canvas').css({"transform":"translateX("+95+"%)"});
+        $('#site-wrapper.show-nav-left #site-canvas').css({"-ms-transform":"translateX("+95+"%)"});
+      	$('#site-wrapper.show-nav-left #site-canvas').css({"-o-transform":"translateX("+95+"%)"});
+      	$('#site-wrapper.show-nav-left #site-canvas').css({"-moz-transform":"translateX("+95+"%)"});
     }
 }
 function toggleNav_right() {
@@ -263,10 +263,10 @@ function toggleNav_right() {
         // Do things on Nav Open
         $('#site-wrapper').addClass('show-nav-right');
         $("section#site-canvas").css('border-right',"1px solid black");
-        $('#site-wrapper.show-nav-right #site-canvas').css({"-webkit-transform":"translateX("+-screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"transform":"translateX("+-screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-ms-transform":"translateX("+-screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-o-transform":"translateX("+-screenwidth()+"%)"});
-      	$('#site-wrapper.show-nav-right #site-canvas').css({"-moz-transform":"translateX("+-screenwidth()+"%)"});
+        $('#site-wrapper.show-nav-right #site-canvas').css({"-webkit-transform":"translateX("+-95+"%)"});
+      	$('#site-wrapper.show-nav-right #site-canvas').css({"transform":"translateX("+-95+"%)"});
+      	$('#site-wrapper.show-nav-right #site-canvas').css({"-ms-transform":"translateX("+-95+"%)"});
+      	$('#site-wrapper.show-nav-right #site-canvas').css({"-o-transform":"translateX("+-95+"%)"});
+      	$('#site-wrapper.show-nav-right #site-canvas').css({"-moz-transform":"translateX("+-95+"%)"});
     }
 }
