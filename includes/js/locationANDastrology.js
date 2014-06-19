@@ -212,7 +212,7 @@ function getZodiac(day, month) {
 }
 /* *********************** */
 function screenwidth(){
-	var screenWidth = $(document).width()-50;
+	var screenWidth = $(document).width();
 	if (screenWidth <= 480) return 85;
 	if (screenWidth > 480 && screenWidth < 768) return 90;
 	return 95;
@@ -220,11 +220,9 @@ function screenwidth(){
 $(function() {
 	screenwidth();
 	$('.toggle-nav-left').click(function() {
-        // Calling a function in case you want to expand upon this.
         toggleNav_Left();
     }),
     $('.toggle-nav-right').click(function() {
-        // Calling a function in case you want to expand upon this.
         toggleNav_right();
     });
    
@@ -232,7 +230,7 @@ $(function() {
 function toggleNav_Left() {
 	loadTrueFalseComments();
     if ($('#site-wrapper').hasClass('show-nav-left')) {
-    	$("section#site-canvas").css('border-left',"none");
+    	//$("section#site-canvas").css('border-left',"none");
         $('#site-wrapper.show-nav-left #site-canvas').css({"-webkit-transform":"translateX(0)"});
         $('#site-wrapper.show-nav-left #site-canvas').css({"transform":"translateX(0)"});
         $('#site-wrapper.show-nav-left #site-canvas').css({"-ms-transform":"translateX(0)"});
@@ -253,7 +251,7 @@ function toggleNav_Left() {
 function toggleNav_right() {
 	loadTrueFalseComments();
     if ($('#site-wrapper').hasClass('show-nav-right')) {
-    	$("section#site-canvas").css('border-right',"none");
+    	//$("section#site-canvas").css('border-right',"none");
         $('#site-wrapper.show-nav-right #site-canvas').css({"-webkit-transform":"translateX(0)"});
       	$('#site-wrapper.show-nav-right #site-canvas').css({"transform":"translateX(0)"});
       	$('#site-wrapper.show-nav-right #site-canvas').css({"-ms-transform":"translateX(0)"});

@@ -162,9 +162,6 @@ body {
 	background-image: url('../images/map.jpg');
 	background-size: auto;
 }
-/*#page_statistics .ui-content{
- width:100%;
- }*/
 #page_statistics .statistics_title {
 	width: auto;
 	background-color: white;
@@ -252,29 +249,7 @@ body {
 .trueComments .statistics_title{
 	color: #fd0160 !important;
 }
-@media only screen and (min-width: 769px) {/*Desktop*/
-	#page_welcome {
-		background: url('../images/welcome_desktop.jpg') no-repeat center center;
-		background-size: cover;
-	}
-}
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {/*Tablet*/
-	#page_welcome {
-		background: url('../images/welcome_tablet.jpg') no-repeat center;
-		background-size: cover;
-	}
-}
-
-@media only screen and (max-width: 480px) {/*mobile*/
-	#page_welcome {
-		background: url('../images/welcome_mobile.jpg') no-repeat center;
-		background-size: cover;
-	}
-	#page_astrology {
-		background-size: cover;
-	}
-}
 /* pie flot */
 #placeholder {
 	width: 220px;
@@ -301,12 +276,14 @@ body {
 	clear: both;
 }
 
+
 /*Off Canvas Menu */
 #site-wrapper {
     position: relative;
-    overflow: inherit;
+    overflow: auto;
+    overflow-x: hidden;
     width: 100%;
-    height: 2000px; /* Temp: Simulates a tall page. 680px*/
+    height: 100%; /* Temp: Simulates a tall page. 680px*/
 }
 #site-canvas {
     width: 100%;
@@ -324,7 +301,7 @@ body {
     top: 0;
     left: -95.5%;
     background: white;
-    border-right: 2px solid #2c2048;
+    border-right: 1px solid #2c2048;
 }
 #site-menu-right {
     width: 95%;
@@ -333,7 +310,7 @@ body {
     top: 0;
     right: -95.5%;
     background: white;
-    border-left: 2px solid #2c2048;
+    border-left: 1px solid #2c2048;
 }
 #site-wrapper.show-nav-left #site-canvas {
     -webkit-transform: translateX(95%);
@@ -358,6 +335,7 @@ body {
 	padding-bottom: 9px;
 	border-bottom: 1px solid #2c2048;
 	color: #ee1862;
+	line-height: 1.29;	/*fix different default values between chrome and firefox*/
 }
 #menu_right_title{
 	width: auto;
@@ -371,7 +349,10 @@ body {
 	padding-bottom: 9px;
 	border-bottom: 1px solid #2c2048;
 	color: #2b1e49;
+	line-height: 1.29;	/*fix different default values between chrome and firefox*/
 }
+
+
 /* dialog */
 #dialog{
 	height:100%;
@@ -394,11 +375,11 @@ body {
 	float: right;
 }
 .objComment{
-	width:70%;;
-	margin:auto;
+	position:relative;
+	width:100%;
 	max-width:270px;
 	height:350px;
-	padding:0;
+	margin:auto;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 15px;
@@ -446,4 +427,27 @@ body {
 	max-width:270px;
 	height:250px;
 	padding: 0;
+}
+@media only screen and (min-width: 769px) {/*Desktop*/
+	#page_welcome {
+		background: url('../images/welcome_desktop.jpg') no-repeat center center;
+		background-size: cover;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {/*Tablet*/
+	#page_welcome {
+		background: url('../images/welcome_tablet.jpg') no-repeat center;
+		background-size: cover;
+	}
+}
+
+@media only screen and (max-width: 480px) {/*mobile*/
+	#page_welcome {
+		background: url('../images/welcome_mobile.jpg') no-repeat center;
+		background-size: cover;
+	}
+	#page_astrology {
+		background-size: cover;
+	}
 }

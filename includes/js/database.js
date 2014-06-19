@@ -1,4 +1,5 @@
 var welcomeText = "WELCOME <p class='context'> Astrology Community, is a new way to test statistically whether your daily astrology forecast matches other people with the same birth data as yours. Let's find out weather or not the forecast matching.<p>";
+var commentHeight;
 var database = [];
 var statisticsLike = [];
 function User(fullName, email, date, time, like, country, comment,img) {
@@ -164,12 +165,14 @@ $("#placeholder").bind("mouseleave", function(event, pos, item) {
 });
 
 function loadTrueFalseComments(){
+	commentHeight=0;
 	$('.trueComments section').find('div').remove().end();
 	$('.falseComments section').find('div').remove().end();
 	$("#site-wrapper").css("height",$(window).height()+"px");
 	for (i in database){
 		if (database[i].country == userCountry){
 			if (database[i].like == true){
+				commentHeight+=180;
 				var obj = document.createElement("div");
 				obj.className = "objComment";
 				$(".trueComments section").append(obj);
@@ -180,6 +183,7 @@ function loadTrueFalseComments(){
 				$(obj).append('<p>Comment</p>');
 			}
 			else if (database[i].like == false){
+				commentHeight+=200;
 				var obj = document.createElement("div");
 				obj.className = "objComment";
 				$(".falseComments section").append(obj);
