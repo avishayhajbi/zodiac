@@ -2,6 +2,7 @@
 body {
 	width: 100%;
 	text-align: center;
+	overflow-x: hidden;
 }
 #wrapper {
 	display: block;
@@ -134,7 +135,7 @@ body {
 	width: 97%;
 }
 #question {
-	padding-bottom:20px;
+	padding-bottom: 20px;
 	font-family: 'Roboto';
 	font-style: normal;
 }
@@ -158,7 +159,7 @@ body {
 	width: 130px;
 }
 #page_statistics {
-	margin: 0px auto;
+	margin: auto;
 	background-image: url('../images/map.jpg');
 	background-size: auto;
 }
@@ -177,22 +178,22 @@ body {
 	/*background: url('../images/false_comment.png') 1% center no-repeat, url('../images/true_comment.png') 99% center no-repeat;*/
 	background-size: 30px;
 }
-#page_statistics #trueIcon , #page_statistics #falseIcon{
+#page_statistics #trueIcon, #page_statistics #falseIcon {
 	width: 50px;
 	height: 30px;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	position: relative;
-	margin-bottom:5px;
+	margin-bottom: 5px;
 	display: inline-block;
-	top:-4px;
+	top: -4px;
 }
-#page_statistics #trueIcon{
+#page_statistics #trueIcon {
 	float: right;
 	background: url('../images/true_comment.png') 70% center no-repeat;
 	background-size: 30px;
 }
-#page_statistics #falseIcon{
+#page_statistics #falseIcon {
 	float: left;
 	background: url('../images/false_comment.png') 30% center no-repeat;
 	background-size: 30px;
@@ -228,25 +229,25 @@ body {
 	background: url('');
 	background-size: contain;
 }
-.pieTextAstrology{
+.pieTextAstrology {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 15px;
 	font-weight: lighter;
 }
-.pieTextState{
+.pieTextState {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 15px;
 	font-weight: 400;
 }
-.falseComments .statistics_title, .trueComments .statistics_title{
+.falseComments .statistics_title, .trueComments .statistics_title {
 
 }
-.falseComments .statistics_title{
+.falseComments .statistics_title {
 	color: #2c2048 !important;
 }
-.trueComments .statistics_title{
+.trueComments .statistics_title {
 	color: #fd0160 !important;
 }
 
@@ -276,59 +277,55 @@ body {
 	clear: both;
 }
 
-
 /*Off Canvas Menu */
 #site-wrapper {
-    position: relative;
-    overflow: auto;
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%; /* Temp: Simulates a tall page. 680px*/
+
+	overflow: auto;
+	overflow-x: hidden;
+	height: 100%; /* Temp: Simulates a tall page. 680px*/
 }
 #site-canvas {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
+	width: auto;
+	height: 100%;
+	position: relative;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition: .3s ease all;
+	transition: .3s ease all;
 }
 #site-menu-left {
-    width: 95%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -95.5%;
-    background: white;
-    border-right: 1px solid #2c2048;
+	width: 95%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -95.5%;
+	background: white;
+	border-right: 1px solid #2c2048;
 }
 #site-menu-right {
-    width: 95%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -95.5%;
-    background: white;
-    border-left: 1px solid #2c2048;
+	width: 95%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: -95.5%;
+	background: white;
+	border-left: 1px solid #2c2048;
 }
 #site-wrapper.show-nav-left #site-canvas {
-    -webkit-transform: translateX(95%);
-    transform: translateX(95%);
+	-webkit-transform: translateX(95%);
+	transform: translateX(95%);
 }
 #site-wrapper.show-nav-right #site-canvas {
-    -webkit-transform: translateX(-95%);
-    transform: translateX(-95%);
+	-webkit-transform: translateX(-95%);
+	transform: translateX(-95%);
 }
 
-
-
-#menu_left_title{
+#menu_left_title {
 	width: auto;
 	background-color: white;
 	font-family: 'Roboto';
 	font-style: normal;
-	font-size:15px;
+	font-size: 15px;
 	font-weight: 400;
 	text-align: center;
 	padding-top: 10px;
@@ -337,12 +334,12 @@ body {
 	color: #ee1862;
 	line-height: 1.29;	/*fix different default values between chrome and firefox*/
 }
-#menu_right_title{
+#menu_right_title {
 	width: auto;
 	background-color: white;
 	font-family: 'Roboto';
 	font-style: normal;
-	font-size:15px;
+	font-size: 15px;
 	font-weight: 400;
 	text-align: center;
 	padding-top: 10px;
@@ -352,80 +349,79 @@ body {
 	line-height: 1.29;	/*fix different default values between chrome and firefox*/
 }
 
-
 /* dialog */
-#dialog{
-	height:100%;
+#dialog {
+	height: 100%;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 15px;
-	font-weight: 400;	
+	font-weight: 400;
 }
 .dialogB.ui-btn.ui-btn-inline {
-	width: 100px ;
-	margin-top:7px;
+	width: 100px;
+	margin-top: 7px;
 	color: black;
 	background-color: #c0bfc0;
 	font-weight: bold;
 }
-#dialogCancel{
+#dialogCancel {
 	float: left;
 }
-#dialogSave{
+#dialogSave {
 	float: right;
 }
-.objComment{
-	position:relative;
-	width:100%;
-	max-width:270px;
-	height:350px;
-	margin:auto;
+.objComment {
+	position: relative;
+	width: 100%;
+	max-width: 270px;
+	height: 350px;
+	margin: auto;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 15px;
-	font-weight: 400;	
+	font-weight: 400;
 }
-.objComment article , .objComment p{
+.objComment article, .objComment p {
 	text-align: left;
 	margin-bottom: 5px;
 }
-.objComment article>span{
+.objComment article > span {
 	float: right;
 	padding-right: 22px;
 	background-image: url('../images/clockIcon.png');
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 	background-position: 22px center;
 }
-.objComment p{
+.objComment p {
 	font-weight: 300;
 	padding-left: 15px;
 	background-image: url('../images/location.png');
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 	background-position: 0px center;
 	opacity: 0.7;
 }
-.objComment p:nth-child(4), .objComment p:nth-child(5){
-	text-align:center;
-	margin:auto;
-	display:inline-block;
-	margin-right:5px;
-	float:left;
-	width:80px;
-	padding:5px;
+.objComment p:nth-child(4), .objComment p:nth-child(5) {
+	text-align: center;
+	margin: auto;
+	display: inline-block;
+	margin-right: 5px;
+	float: left;
+	width: 80px;
+	padding: 5px;
 	text-shadow: 0 0 black;
 	background-color: grey;
 	background-size: 25px;
 }
-.objComment p:nth-child(4){
+.objComment p:nth-child(4) {
 	background-image: url('../images/likeIcon.png');
 }
-.objComment p:nth-child(5){
+.objComment p:nth-child(5) {
 	background-image: url('../images/commentIcon.png');
 }
-.objComment img{
-	width:auto;
-	max-width:270px;
-	height:250px;
+.objComment img {
+	width: auto;
+	max-width: 270px;
+	height: 250px;
 	padding: 0;
 }
 @media only screen and (min-width: 769px) {/*Desktop*/
